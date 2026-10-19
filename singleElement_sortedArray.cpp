@@ -21,18 +21,18 @@ public:
                 return nums[mid];
             }
             if(mid%2==0){   //even in both sides
-                if(nums[mid-1]==nums[mid]){ //go to right side
+                if(nums[mid-1]==nums[mid]){ //go to left side
                     end=mid-1;
                 }
-                else{   //go to left side
+                else{   //go to right side
                     start=mid+1;
                 }
             }
             else{   //odd in both sides
-                if(nums[mid-1]==nums[mid]){ //go to left side
+                if(nums[mid-1]==nums[mid]){ //go to right side
                     start=mid+1;
                 }
-                else{   //go to right side
+                else{   //go to left side
                     end=mid-1;
                 }
             }
